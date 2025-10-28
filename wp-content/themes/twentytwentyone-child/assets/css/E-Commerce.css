@@ -1,0 +1,41 @@
+/* --------------E-commerce page-------------- */
+#E-CommerceBanner {
+ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 3%, rgba(190, 221, 255, 1) 50%);
+ height: 100%;
+ width: 100%;
+}
+
+#E-CommerceBanner .btn{
+  border:1px solid #001e6b;
+  color: #001e6b;
+}
+
+#E-commerce-solution .bg-color {
+  background: linear-gradient(90deg,rgba(239, 229, 255, 1) 24%, rgba(212, 234, 255, 1) 84%);
+}
+
+.ourdevservices {
+  background: url(../images/E-commerce/our-service/pngtree-online-shopping.png) center/cover no-repeat;
+}
+
+.synergyTop-points{
+  background-image: url(../images/E-commerce/synergytop-sem.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.expert-row-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.expert-row-wrapper .new-col{
+  width: 210px;
+}
+/* end */
+
+/* media */
+

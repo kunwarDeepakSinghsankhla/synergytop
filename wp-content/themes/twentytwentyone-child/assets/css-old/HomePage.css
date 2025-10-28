@@ -1,0 +1,486 @@
+
+/*#-----------------------home-banner start--------------------*/
+
+.homePage-Banner {
+  background-image: url(../images/heroBanner.png);
+  background-size: cover; 
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #010312;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.bannerContent {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* btn effect */
+.bannerTab {
+    position: relative;
+    overflow: hidden;
+    background: var(--primary-color);
+    font-size: 18px;
+    border: 0;
+    padding: 9px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 0;
+}
+
+.bannerTab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #9d0da5, #244aff); 
+    transition: left 0.6s ease-in-out;
+    z-index: -1;
+}
+
+.bannerTab:hover::before {
+    left: 0;
+}
+/* btn effect end*/
+
+.floating-laptop {
+  animation: cloudMotion 2s ease-in-out infinite;
+}
+
+.before-effect::before {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 136px;
+    background: #7a3d073b;
+    transform: rotate(20deg);
+    position: absolute;
+    box-shadow: 0px 0px 30px 42px #7a3d073b;
+    left: 0;
+    border-radius: 103px;
+    top: 7px;
+}
+/* #homebanner end*/
+
+/* Our Growth Statistics start */
+.growth-statistics img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.growth-statistics h4 {
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--blue-color);
+}
+
+.growth-statistics p {
+  font-size: 18px;
+  color: var(--text-colorv1);
+}
+
+.growth-statistics .card {
+  border-top: 3px solid var(--theme-color) !important;
+}
+
+/* Our Growth Statistics end */
+
+/* our work */
+.set-arrow-icon {
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    top: -12px;
+}
+/* end */
+
+/* Awards and recognitions start*/
+#award .bg-color,
+#client .bg-color {
+  background: linear-gradient(90deg, #630463 15%, #001c64 85%);
+}
+/* Awards and recognitions end*/
+
+/* our technology start*/
+.ourworks-btns .swiper-button-next,
+.ourworks-btns .swiper-button-prev {
+  color: #a30da3;
+  position: absolute;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  border: #ccc 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourworks-btns .swiper-button-prev::after,
+.ourworks-btns .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ourworks-btns .swiper-button-prev::after {
+  content: url(../images/icon/left.png);
+  width: 20px;
+  height: 20px;
+}
+
+.ourworks-btns .swiper-button-next::after {
+  content: url(../images/icon/right.png);
+  width: 20px;
+  height: 20px;
+}
+
+#OurWork .ourworks-btns {
+  margin-bottom: 20px;
+}
+
+.our-technologies .tech-container ul li a {
+    display: grid;
+    justify-items: center;
+    min-height: 6rem;
+    width: 7.3rem;
+    border: 1px solid #5484FF;
+    border-radius: 8px !important;
+    align-items: center;
+    text-align: center;
+    color:#5484FF !important;
+    padding: 5px;
+}
+.our-technologies .tech-container ul li a img{
+  filter: invert(27%) sepia(75%) saturate(73) hue-rotate(216deg) brightness(110%) contrast(95%);
+}
+
+.our-technologies .nav-pills .nav-link.active , .our-technologies .nav-pills .nav-link.active img{
+  background-color: #0042E8;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+  filter: none;
+}
+
+.our-technologies .tab-content {
+  background: linear-gradient(90deg,rgba(163, 13, 163, 1) 0%, rgba(0, 72, 255, 1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.our-technologies .tech-card {
+  padding: 18px;
+  text-align: center;
+  background: #fff;
+  height: 70px;
+  align-content: center;
+
+}
+
+.our-technologies .tech-card img {
+  width: auto;
+  height: 32px;
+}
+
+.our-technologies .tab-pane .techno-row{
+  /* overflow-y: hidden;
+  overflow-x: auto; */
+  display: flex;
+  align-items: center;
+  padding: 10px 3px;
+  cursor: grab;
+}
+
+/* .our-technologies .tab-pane .techno-row::-webkit-scrollbar {
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+
+.our-technologies .tab-pane .techno-row::-webkit-scrollbar-thumb {
+  background: rgb(104, 93, 255);
+  border-radius: 10px;
+} */
+
+/* .our-technologies .tab-pane .techno-row::-webkit-scrollbar-thumb:hover {
+  background: #056fd8;
+} */
+/* our technology end*/
+
+/* Our Industries start */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+}
+.top-left-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+}
+
+.top-left-icon:hover img {
+  background-color: #ffffff38;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+}
+.industry-card h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.OurWork_sld .card1 {
+  background: url(../images/ourWorksld01.png);
+}
+.OurWork_sld .card2 {
+  background: url(../images/ourWorksld02.png);
+}
+.OurWork_sld .card {
+  background-size: cover;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #a30da3, #0048ff) 1;
+  /* width: 385px; */
+  height: 480px;
+}
+.OurWork_sld .card .inner {
+  height:max-content;
+  background: #fff;
+  margin: 12px;
+  margin-top: auto;
+  position: relative;
+}
+.OurWork_sld .card .inner p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #14141c;
+}
+
+/* Our Industries end */
+
+/* our Clients start */
+
+#client .heading_section p,
+#client .heading_section h2 {
+  color: #b0c6ff;
+}
+ 
+td.logo-grid {
+    border: 1px solid #ffffff45;
+    /* border-left: 0; */
+    border-top: 0;
+    width: 160px;
+    height: 98px;
+    /* height: 80px; */
+    padding: 10px;
+}
+
+.logo-item {
+    /* padding: 35px; */
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+  width:min-content;
+  filter: brightness(0.7);
+}
+
+#client .img-wrraper img{
+ width: 100px;
+}
+
+#client .card {
+    min-height: 520px !important;
+    height: unset !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Remove left border for first td and right border for last td in tr */
+tr.client-sidebar td:nth-child(1) {
+  border-left: 0;
+}
+tr.client-sidebar td:last-child {
+  border-right: 0;
+}
+
+/* Set all borders to light gray for client-sidebar row cells */
+tr.client-sidebar td {
+  border-left: 1px solid #ffffff45;
+  border-right: 1px solid #ffffff45;
+  border-bottom: 1px solid #ffffff45;
+  border-top: 0;
+}
+
+/* On hover or active, highlight left, bottom, right border as solid 1px white */
+
+/* tr.client-sidebar td:hover, */
+tr.client-sidebar td.active {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff !important;
+  border-top: 0;
+}
+
+tr.client-sidebar td:hover .logo-item img,
+tr.client-sidebar td.active .logo-item img {
+  filter: brightness(1);
+}
+
+/* Remove bottom border for last row */
+table tbody .client-sidebar:last-child td {
+  border-bottom: 0;
+}
+
+tr.client-sidebar td {
+  position: relative;
+}
+
+tr.client-sidebar td::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-left: 1px solid transparent;
+  z-index: 2;
+}
+
+tr.client-sidebar td.active::after {
+  border-left: 1px solid #fff;
+}
+
+#client .Testimonials_Swiper .swiper-slide .card .img-wrapper{
+  margin: 0 auto;
+}
+
+.client .card .client-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+/* client section end */
+
+/* Media css */
+@media(min-width:1442px){
+  .crafting_innovative .card {
+    height:450px;
+  }
+  #client .card{
+    min-width:590px;
+  }
+
+  .client .card .client-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (max-width: 1024px) {
+
+ /*--------- page-home----- */
+  .bannerContent{
+    height: 38vh;
+  }
+
+  .homePage-Banner {
+    height: 60vh;
+  }
+ 
+#client .Testimonials_sld .ourworks-btns .swiper-button-next, #client .Testimonials_sld .ourworks-btns .swiper-button-prev{
+      top: 75%;
+}
+
+.client .card .client-truncate {
+  -webkit-line-clamp: 7;
+}
+/* End */
+}
+
+/* end */
+
+@media (max-width: 992px) {
+.bannerContent {
+      height: 40vh;
+  }
+
+.homePage-Banner{
+  background-position:top center;
+  height: 60vh;
+  justify-content: end;
+}
+}
+
+@media (max-width: 768px) {
+/*--------- page-home----- */
+#client .container table{
+  width: 100%;
+  margin: 0 auto;
+}
+/* end */
+}
+
+@media (max-width: 576px) {
+  /*--------- page-home----- */
+  .homePage-Banner {
+  background-position: center;
+  height: 75vh;
+  justify-content: center;
+}
+
+ .our-technologies .tech-card{
+    margin:0;
+  }
+
+.our-technologies .nav-pills li {
+    width: 100%;
+}
+
+.our-technologies .nav-pills .nav-link {
+    width: 100%;
+}
+
+.crafting_innovative .card{
+  height: 410px;
+}
+
+#client .Testimonials_sld .ourworks-btns .swiper-button-next, #client .Testimonials_sld .ourworks-btns .swiper-button-prev {
+  top: 70%;
+}
+/*--------- page-home-End----- */
+}
+
+@media (max-width: 390px) {
+  .homePage-Banner {
+      height: 100%;
+      padding: 124px 0 290px 0;
+  }
+}
+/* end */
+
+
+/* end */

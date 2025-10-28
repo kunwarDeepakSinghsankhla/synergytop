@@ -1,0 +1,107 @@
+
+.page-id-42023 p {
+    margin: 0px;
+    color: #727272;
+}
+.page-id-42023 a{
+    text-decoration: none;
+}
+
+.page-id-42023 img{
+    width:auto;
+}
+
+#zoho_banner_section .zoho_banner_content_sec a {
+    background-color: #DA251C;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#zoho_banner_section .zoho_banner_content_sec a:hover{
+    background-color: #0056b3;
+}
+.zoho_banner_content_sec {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#zoho_work_card_section .zoho-middle-card-heading h1 {
+    color: #090909;
+    font-weight: 700;
+}
+section#zoho_work_card_section .zoho-middle-card-heading h1 span {
+    display: block;
+    font-weight: 400;
+}
+
+section#card-zoho-crm  {
+    height: auto;
+}
+
+section#card-zoho-crm .zoho-crm-card {
+    border-radius: 5px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+section#card-zoho-crm .zoho-crm-card h3 {
+    color: #090909;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section#card-zoho-crm .zoho-crm-card p {
+    color: #565656;
+    font-size: 16px;
+}
+
+section#zoho-middle-image {
+    background: #F7EDF7;
+    padding: 15px 0px;
+    margin-top: 40px;
+}
+
+section#bottom-content-card .bottom-card-title h2 {
+    color: #090909;
+}
+section#bottom-content-card .bottom-card-title p {
+    font-size: 15px;
+    width: 70%;
+}
+.bottom-inside-car img {
+   width:100%;
+   object-fit: cover;
+}
+
+.bottom-inside-car .img-wrap{
+    background: #FFE7E6;
+    padding: 12px;
+    border-radius: 50px; 
+    margin-bottom:10px; 
+}
+
+.bottom-inside-car h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+section#bottom-content-card .bottom-inside-car p {
+    font-size: 15px;
+}
+
+.bottom-inside-car {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 30px;
+}

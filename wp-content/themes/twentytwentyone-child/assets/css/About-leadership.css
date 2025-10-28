@@ -1,0 +1,51 @@
+
+/* leaders css */
+.profile-img {
+    width: 100%;
+    max-width:300px;
+}
+
+.lead-wrapper-box{
+    background: linear-gradient(180deg, #C3D7FF 0%, #F0F5FF 90%);
+}
+
+.gradient-btn {
+    position: relative;
+    padding: 10px 22px;
+    border: none;
+    border-radius:4px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #A30DA3, #0048FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(90deg, #A30DA3, #0048FF);
+    border-radius: 4px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.lead-wrapper-box .position-absolute{
+    bottom: 82px;
+}
+
+.gradient-btn:hover{
+    box-shadow: #C3D7FF 0px 0px 8px 0px;
+}
+/* end */
+
+/* media query */
+@media (max-width:992px){
+    .lead-wrapper-box .position-absolute {
+        bottom: 80px;
+    }
+}

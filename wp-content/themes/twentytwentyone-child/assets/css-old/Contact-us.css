@@ -1,0 +1,73 @@
+.contact-us-section{
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:550px;
+}
+
+.one-side-round img{
+    border-radius: 10px 10px 10px 70px;
+}
+
+.contact-us-section .banner-health{
+    height: 100%;
+}
+
+.logo-cont{
+  width:100%;
+  height:114px;
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+}
+
+.contact-rating .logo-cont .logo{
+  width:90px !important;
+  height:unset !important;
+}
+
+.what-our-client .card{
+border: 1px solid #68a9ff;
+background-color: #001E6B;
+border-radius: 10px !important;
+overflow: hidden;
+}
+
+.what-our-client .card .card-header{
+  border-bottom: 1px solid;
+  border-image: linear-gradient(270deg,rgba(104, 169, 255, 1) 0%, rgba(29, 60, 211, 1) 75%) 1; 
+}
+
+.what-our-client .card .card-body p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* rating section */
+.contact-client .ratingDiv .card img.logo {
+    width: 100% !important;
+    object-fit: scale-down;
+}
+
+/* media */
+@media (max-width: 1024px) {
+.contact-us-section .banner-health{
+    height: 100%;
+}
+}
+
+@media (max-width: 576px) {
+    .contact-us-section{
+        background-size:cover;
+    }
+
+    .contact-rating .logo-cont .logo{
+      width:125px !important;
+    }
+
+    .logo-cont{
+        height:150px;
+    }
+}

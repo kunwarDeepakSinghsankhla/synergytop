@@ -1,0 +1,87 @@
+
+/* tabbing css */
+.custom-tabbing-dev .nav-link {
+    color: #4E4E4E;
+    padding: 18px 18px 18px 51px;
+    }
+
+.custom-tabbing-dev .nav-link.active {
+    color: #000 !important;
+    background-color: #ffffff07;
+    box-shadow: 0px 0px 5px 0px #0000004a;
+    transition: all ease-in-out;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, #a30da3, #0048ff) 1;
+    /* padding: 16px; */
+    position: relative;
+    z-index: 1;
+}
+
+.custom-tabbing-dev .tab-content > .tab-pane {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+.custom-tabbing-dev .tab-content {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 100%; 
+    min-height: 640px;
+}
+
+.custom-tabbing-dev .tab-content > .active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: ease-in-out 0.5s ease;
+    }
+
+.custom-tabbing-dev .content-box {
+    padding: 20px;
+    background-color: #F0F5FF;
+    border: 1px solid #D7E4FF;
+    box-shadow: 3px 0px 5px -1px rgb(0 0 0 / 19%);
+}
+
+/* Scrollbar styling */
+.custom-tabbing-dev .tab-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-tabbing-dev .tab-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, #a30da3, #0048ff);
+    border-radius: 6px;
+}
+
+.custom-tabbing-dev .tab-content::-webkit-scrollbar-track {
+    background: #e6eaff;
+    border-radius: 6px;
+}
+/* end */
+
+/* why choose st */
+.why-choose-st{
+background: no-repeat center/100% 100%;
+}
+/* end */
+
+
+/* media queries */
+/* OurCustomSoftwareDevelopment */
+@media (min-width:1442px) {
+.custom-tabbing-dev .tab-content {
+      min-height: 835px;
+}
+/* end */
+
+}
+
+@media (max-width:992px) {
+
+}
+
+@media (max-width: 576px) {
+.custom-tabbing-dev .tab-content{
+    min-height: auto;
+}
+}

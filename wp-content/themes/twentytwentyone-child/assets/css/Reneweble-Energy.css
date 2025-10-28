@@ -1,0 +1,85 @@
+/* ------------------Renewable Energy page---------- */
+#RenewableBanner{
+  background: 100% 30px/100% 100% no-repeat;
+}
+
+#RenewableBanner .btn{
+  border:1px solid #FFA500;
+  color:#FFA500;
+}
+
+#Solar-Industry{
+background: url(../images/renewable-energy/solar.png) center/cover no-repeat;
+}
+
+
+/* slider */
+#Solar-services-slider{
+  background-color: #FFB429;
+}
+
+ .energy_sec_slider .swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .energy_sec_slider .swiper-slide {
+    overflow: hidden;
+    border-radius: 45px;
+  }
+
+  .energy_sec_slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+
+  /* Customize navigation buttons */
+  .energy_sec_slider .swiper-button-next,
+  .energy_sec_slider .swiper-button-prev {
+    color: #fff !important;
+  }
+
+  .energy_sec_slider .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 510px;
+    border: 5px solid #fff;
+    background: radial-gradient(circle,rgba(252, 232, 196, 1) 0%, rgba(255, 165, 0, 1) 44%);
+    padding: 20px;
+    border-radius: 45px;
+  }
+
+  .energy_sec_slider .swiper-button-prev:after, .energy_sec_slider .swiper-rtl .swiper-button-next:after ,.energy_sec_slider .swiper-button-next:after, .energy_sec_slider .swiper-rtl .swiper-button-prev:after{
+    font-size: x-large;
+  }
+/* technical exper-solar */
+.solar-technicalExpertise .container .btn{
+  color:#fff;
+  background: #FFA500 !important;
+}
+
+.solar-technicalExpertise .container .btn:hover{
+  color:#000;
+}
+/* end */
+
+/* media */
+@media (max-width:1024px) {
+    .benefits-solar .card{
+      min-height: 340px;
+    }
+}
+
+@media (max-width:576px) {
+.energy_sec_slider .swiper-button-next, .energy_sec_slider .swiper-button-prev {
+    top: 320px;
+}
+
+#RenewableBanner{
+background: white;
+}
+}

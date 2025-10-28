@@ -1,0 +1,201 @@
+
+.healthBanner {
+  background: linear-gradient(90deg, rgba(3, 32, 62, 1)24% , rgba(8, 8, 97, 1)50%);
+  height: 100%;
+  width: 100%;
+}
+/* .healthBanner .banner-health{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.banner-para p{
+  color: #fff;
+}
+
+.healthBanner .btn {
+  background: transparent;
+  border: 1px solid #bafff0;
+  color: #bafff0;
+  padding: 6px 10px;
+}
+
+.healthBanner .btn:hover {
+  background: white;
+  color:#000;
+}
+
+.itsoltion .bg-color {
+  background: linear-gradient(45deg, #00bf96, #73d3ff);
+}
+
+/* .itsoltion .it-solution-wpar{
+      height:100%;
+} */
+#healthCareSld {
+  background: url(../images/Health-software-care.png);
+  background-size: 100% 50%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+} 
+
+#healthCareBenefit .card {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #73D3FF, #00BF96) 1;
+    min-height: 276px;
+    box-shadow: 0px 0px 10px 0px #00000026;
+}
+#healthCareBenefit .card:hover{
+  background: linear-gradient(315.05deg, rgba(234, 248, 255, 0.5) 0%, rgba(225, 255, 249, 0.5) 99.91%);
+}
+#healthCareBenefit .card p {
+    font-size: 18px;
+    color: #727272;
+}
+#healthCareSld .card {
+  background-size: cover;
+  border: 1px solid #001E6B;
+  border-image: none;
+  /* width: 385px; */
+  height: 370px;
+}
+
+.healthSld  .card1, .backcard1 {
+  background: url(../images/healthsld01.png);
+}
+.healthSld  .card2, .backcard2 {
+  background: url(../images/healthsld02.png);
+}
+.healthSld  .card3, .backcard3 {
+  background: url(../images/healthsld03.png);
+}
+.healthSld  .card4, .backcard4 {
+  background: url(../images/healthsld04.png);
+}
+.healthSld  .card5, .backcard5 {
+  background: url(../images/healthsld05.png);
+}
+.healthSld  .card6, .backcard6 {
+  background: url(../images/healthsld06.png);
+}
+.swiper.healthSld{min-height: 382px;}
+#healthCareSld .card .inner {
+  height: 105px;
+  background: #fff;
+  margin: 12px;
+  margin-top: auto;
+}
+#healthCareSld .card .inner p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #14141c;
+}
+#whyChoose {
+    background-image: url(../images/healthwhychooseBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#whyChoose::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 85%); /* Adjust opacity as needed */
+}
+.flip-card {
+  perspective: 5000px; /* 3D effect */
+}
+
+.flip-card-inner {
+transform-style: preserve-3d;
+transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+backface-visibility: hidden;
+}
+
+.flip-card-back {
+background-size: cover  !important;
+transform: rotateY(180deg);
+}
+.flip-card-back:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, rgba(187, 233, 255, 0.9) 0%, rgba(115, 255, 225, 0.9) 100%);
+}
+
+.health-btns .swiper-button-prev {
+content: url(../images/icon/healthsldbtnLeft.png);
+width: 56px;
+height: 56px;
+right: 140px;
+left: auto;
+}
+
+.health-btns .swiper-button-next {
+content: url(../images/icon/healthsldbtnRight.png);
+width: 56px;
+height: 56px;
+right: 65px;
+}
+
+
+#OurWork .health-btns {
+margin-bottom: 20px;
+}
+
+/* HealthCare Landing Page end*/
+
+/* media */
+/* Media css */
+@media (max-width: 1024px) {
+  #healthCareBenefit .card{
+   min-height: 240px;
+}
+
+
+#healthCareSld .container-fluid{
+  padding-left:0;
+  padding: 0 55px;
+}
+
+#healthCareSld .card .inner{
+  height: 135px;
+}
+
+.flip-card{
+  perspective:initial;
+}
+}
+
+@media (max-width: 576px) {
+  /*--------- Health care page start ------- */
+.health-btns .swiper-button-next{
+  right:0;
+  left: auto;
+}
+
+.health-btns .swiper-button-prev{
+  right: auto;
+  left: 0;
+}
+
+.swiper.healthSld {
+    min-height: 400px;
+}
+/* end */
+}
